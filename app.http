@@ -1,0 +1,25 @@
+### Get all movies
+GET http://localhost:3000/movies
+
+### Add a new movie
+POST http://localhost:3000/change-password
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "oldPassword": "richard_567",
+  "newPassword": "richard@123"
+}
+
+### Update a movie
+PUT http://localhost:3000/movies/1
+Content-Type: application/json
+
+{
+  "title": "Inception",
+  "director": "Christopher Nolan",
+  "releaseYear": 2010
+}
+
+### Delete a movie
+DELETE http://localhost:3000/movies/1
